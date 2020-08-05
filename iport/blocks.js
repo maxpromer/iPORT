@@ -87,8 +87,7 @@ Blockly.Blocks['iport_analog_read'] = {
 					[ "IN1", "32" ],
 					[ "IN2", "33" ],
 					[ "IN3", "34" ],
-					[ "IN4", "35" ],
-					[ "VN", "39" ]
+					[ "IN4", "35" ]
 				]
 			}],
 			"output": [

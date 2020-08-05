@@ -1,14 +1,14 @@
 Blockly.Msg.IPORT_DIGITAL_READ_MESSAGE = "อ่านค่าดิจิทัลที่ช่อง %1";
-Blockly.Msg.IPORT_DIGITAL_READ_TOOLTIP = "อ่านค่าดิจิทัลจากช่องใด ๆ บน OpenKB";
+Blockly.Msg.IPORT_DIGITAL_READ_TOOLTIP = "อ่านค่าดิจิทัลจากช่องใด ๆ บน KidBright32";
 
 Blockly.Msg.IPORT_DIGITAL_WRITE_MESSAGE = "เขียนค่าดิจิทัลที่ช่อง %1 เป็น %2";
-Blockly.Msg.IPORT_DIGITAL_WRITE_TOOLTIP = "เขียนค่าดิจิทัลไปที่ช่องใด ๆ บน OpenKB";
+Blockly.Msg.IPORT_DIGITAL_WRITE_TOOLTIP = "เขียนค่าดิจิทัลไปที่ช่องใด ๆ บน KidBright32";
 
 Blockly.Msg.IPORT_ANALOG_READ_MESSAGE = "อ่านค่าแอนะล็อกที่ช่อง %1";
-Blockly.Msg.IPORT_ANALOG_READ_TOOLTIP = "อ่านค่าแอนะล็อก 0 ถึง 1023 จากช่องใด ๆ บน OpenKB";
+Blockly.Msg.IPORT_ANALOG_READ_TOOLTIP = "อ่านค่าแอนะล็อก 0 ถึง 4095 จากช่องใด ๆ บน KidBright32";
 
 Blockly.Msg.IPORT_ANALOG_WRITE_MESSAGE = "เขียนค่าแอนะล็อกที่ช่อง %1 เป็น %2";
-Blockly.Msg.IPORT_ANALOG_WRITE_TOOLTIP = "เขียนค่าแอนะล็อก 0 ถึง 1023 ไปที่ช่องใด ๆ บน OpenKB";
+Blockly.Msg.IPORT_ANALOG_WRITE_TOOLTIP = "เขียนค่าแอนะล็อก 0 ถึง 1023 ไปที่ช่องใด ๆ บน KidBright32";
 
 Blockly.Msg.IPORT_SERVO_MESSAGE = "ตั้งเซอร์โวช่อง %1 หมุนไปที่ %2 องศา";
 Blockly.Msg.IPORT_SERVO_TOOLTIP = "";
