@@ -15,3 +15,18 @@ Blockly.Msg.IPORT_SERVO_TOOLTIP = "";
 
 Blockly.Msg.IPORT_SERVO_CALIBRATE_MESSAGE = "Servo pin %1 calibrate time to ( %2 , %3 )";
 Blockly.Msg.IPORT_SERVO_CALIBRATE_TOOLTIP = "";
+
+Blockly.Msg.IPORT_USB_WRITE_MESSAGE = "Write USB OUT status %1";
+Blockly.Msg.IPORT_USB_WRITE_ON_MESSAGE = "on";
+Blockly.Msg.IPORT_USB_WRITE_OFF_MESSAGE = "off";
+Blockly.Msg.IPORT_USB_WRITE_TOOLTIP = "";
+
+Blockly.Msg.IPORT_USB_TOGGLE_MESSAGE = "Toggle USB OUT status";
+Blockly.Msg.IPORT_USB_TOGGLE_TOOLTIP = "";
+
+Blockly.Msg.IPORT_USB_READ_MESSAGE = "Read USB OUT status";
+Blockly.Msg.IPORT_USB_READ_TOOLTIP = "";
+
+Blockly.Msg.IPORT_USB_ANALOG_WRITE_MESSAGE = "Analog write USB OUT %1";
+Blockly.Msg.IPORT_USB_ANALOG_WRITE_TOOLTIP = "";
+

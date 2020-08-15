@@ -231,3 +231,93 @@ Blockly.Blocks['iport_servo_calibrate'] = {
 		});
 	}
 };
+
+Blockly.Blocks['iport_write_usb'] = {
+	init: function() {
+		this.jsonInit({
+			"type": "iport_write_usb",
+			"message0": Blockly.Msg.IPORT_USB_WRITE_MESSAGE,
+			"args0": [
+			  {
+				"type": "field_dropdown",
+				"name": "value",
+				"options": [
+				  [
+					Blockly.Msg.IPORT_USB_WRITE_ON_MESSAGE,
+					"1"
+				  ],
+				  [
+					Blockly.Msg.IPORT_USB_WRITE_OFF_MESSAGE,
+					"0"
+				  ]
+				]
+			  }
+			],
+			"previousStatement": null,
+			"nextStatement": null,
+			"colour": 120,
+			"tooltip": Blockly.Msg.IPORT_USB_WRITE_TOOLTIP,
+			"helpUrl": ""
+		});
+	}
+};
+
+Blockly.Blocks['iport_toggle_usb'] = {
+	init: function() {
+		this.jsonInit({
+			"type": "iport_toggle_usb",
+			"message0": Blockly.Msg.IPORT_USB_TOGGLE_MESSAGE,
+			"previousStatement": null,
+			"nextStatement": null,
+			"colour": 120,
+			"tooltip": Blockly.Msg.IPORT_USB_TOGGLE_TOOLTIP,
+			"helpUrl": ""
+		});
+	}
+};
+
+Blockly.Blocks['iport_read_usb'] = {
+	init: function() {
+		this.jsonInit({
+			"type": "iport_read_usb",
+			"message0": Blockly.Msg.IPORT_USB_READ_MESSAGE,
+			"output": null,
+			"colour": 120,
+			"tooltip": Blockly.Msg.IPORT_USB_READ_TOOLTIP,
+			"helpUrl": ""
+		});
+	}
+};
+
+Blockly.Blocks['iport_analog_write_usb'] = {
+	init: function() {
+		this.jsonInit({
+			"type": "iport_analog_write_usb",
+			"message0": Blockly.Msg.IPORT_USB_ANALOG_WRITE_MESSAGE,
+			"args0": [
+			  {
+				"type": "input_value",
+				"name": "value",
+				"check": "Number"
+			  }
+			],
+			"inputsInline": true,
+			"previousStatement": null,
+			"nextStatement": null,
+			"colour": 120,
+			"tooltip": Blockly.Msg.IPORT_USB_ANALOG_WRITE_TOOLTIP,
+			"helpUrl": ""
+		});
+	},
+	xmlToolbox: function() {
+		return `
+		<block type="iport_analog_write_usb">
+		  	<value name="value">
+				<shadow type="math_number">
+					<field name="VALUE">1023</field>
+				</shadow>
+			</value>
+		</block>
+		`;
+	}
+};

@@ -30,6 +30,8 @@ class iPORT : public Device {
 		uint8_t getLEDCChannelFromPin(uint8_t pin) ;
 		uint8_t setupLEDCFromPin(uint8_t pin, bool isServo = false) ;
 
+		bool usbLastValue = false;
+
 	public:
 		// constructor
 		iPORT(void);
@@ -50,6 +52,11 @@ class iPORT : public Device {
 		int analogRead(int pin) ;
 		void analogWrite(int pin, int value) ;
 
+		void usbWrite(int value) ;
+		int usbRead() ;
+		void usbToggle() ;
+		void usbAnalogWrite(int value) ;
+		
 		// Servo
 		void servoSetAngle(int pin, int angle) ;
 		void servoCalibrate(int pin, float min, float max) ;

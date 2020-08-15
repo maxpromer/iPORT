@@ -177,4 +177,23 @@ void iPORT::servoCalibrate(int pin, float min, float max) {
 	pwmConfigState[index].duty.max = 0xFFFF * max / 20.0;
 }
 
+void iPORT::usbWrite(int value) {
+	digitalWrite(25, !value);
+	usbLastValue = value;
+}
+
+int iPORT::usbRead() {
+	return usbLastValue;
+}
+
+void iPORT::usbToggle() {
+	usbLastValue = !usbLastValue;
+	digitalWrite(25, !usbLastValue);
+}
+
+void iPORT::usbAnalogWrite(int value) {
+	analogWrite(25, 1023 - value);
+	usbLastValue = value > 512;
+}
+
 #endif

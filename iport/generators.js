@@ -38,3 +38,25 @@ Blockly.JavaScript['iport_servo_calibrate'] = function(block) {
 	var code = 'DEV_IO.iPORT().servoCalibrate(' + dropdown_pin + ', ' + number_min + ', ' + number_max + ');\n';
 	return code;
 };
+
+Blockly.JavaScript['iport_write_usb'] = function(block) {
+	var dropdown_value = block.getFieldValue('value');
+	var code = 'DEV_IO.iPORT().usbWrite(' + dropdown_value  + ');\n';
+	return code;
+};
+
+Blockly.JavaScript['iport_toggle_usb'] = function(block) {
+	var code = 'DEV_IO.iPORT().usbToggle();\n';
+	return code;
+};
+
+Blockly.JavaScript['iport_read_usb'] = function(block) {
+	var code = 'DEV_IO.iPORT().usbRead()';
+	return [code, Blockly.JavaScript.ORDER_NONE];
+};
+
+Blockly.JavaScript['iport_analog_write_usb'] = function(block) {
+	var value_value = Blockly.JavaScript.valueToCode(block, 'value', Blockly.JavaScript.ORDER_ATOMIC);
+	var code = 'DEV_IO.iPORT().usbAnalogWrite(' + value_value + ');\n';
+	return code;
+  };
